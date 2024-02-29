@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EthStrap</title>
+    <!-- Add Bootstrap CDN links -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="eth.jpeg" alt="logo" class="h-10 cursor-pointer" />
+          <span class="mr-2 text-lg font-bold text-black">EtherEase</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="nav-item bg-[#c1b5f6] py-2 px-3 text-black rounded-lg mx-4 cursor-pointer hover:bg-[#7b95f6]"
+            >
+              Market
+            </li>
+            <li
+              class="nav-item bg-[#c1b5f6] py-2 px-3 text-black rounded-lg mx-4 cursor-pointer hover:bg-[#7b95f6]"
+            >
+              Wallets
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content goes here -->
+    <div class="gradient-bg-footer">
+      <div class="container-fluid">
+        <!-- Registration Form -->
+        <div class="container-fluid p-2">
+          <div
+            class="row justify-content-center justify-content-md-between items-center flex-column flex-md-col my-4"
+          >
+            <!-- Registration Form -->
+            <form
+              id="registrationForm"
+              class="p-5 sm:w-96 flex flex-column justify-start items-center"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+                class="my-2 rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+                style="width: 300px"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="my-2 rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+                style="width: 300px"  
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                class="my-2 rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+                style="width: 300px"  
+              />
+              <button type="submit" class="btn btn-primary btn-lg mt-2">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
